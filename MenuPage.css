@@ -1,0 +1,116 @@
+/* MenuPage.css */
+
+/* General Page Styling */
+.menu-page {
+  background: url('images/pexels-monicore-1391487.jpg') no-repeat center center fixed; /* Add a beautiful background image */
+  background-size: cover; /* Cover the entire page */
+  padding: 4rem 1.5rem; /* Increase padding for a spacious feel */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #1c1b1b; /* White text for contrast */
+}
+
+/* Title Styling */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #0c0c0c;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center; /* Center the title */
+}
+
+/* Dropdown */
+.dropdown-toggle {
+  background-color: #f9533d; /* Bright red color */
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+  background-color: #d94b34; /* Darker shade for hover */
+}
+
+/* Menu Grid Layout */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Increase space between items */
+  justify-content: center;
+}
+
+/* Menu Item Card */
+.menu-item-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Menu Item Image */
+.menu-item-image {
+  height: 220px; /* Increased height for better visibility */
+  object-fit: cover;
+}
+
+/* Card Content */
+.card-body {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+}
+
+/* Menu Item Name */
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Price and Category Badge */
+.price-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-price {
+  font-size: 1.4rem;
+  color: #f9533d; /* Price in the same color as dropdown */
+  font-weight: bold;
+}
+
+/* Category Badge Styling */
+.badge-secondary {
+  font-size: 0.9rem;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  background-color: #f9533d; /* Button color matches the theme */
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  padding: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #d94b34; /* Darker shade on hover */
+}
