@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Interaction Example</title>
+</head>
+<body>
+  <h1>Welcome to the Backend Interaction Page</h1>
+
+  <!-- Form to send data to the backend -->
+  <form id="dataForm">
+    <label for="name">Enter Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Send to Backend</button>
+  </form>
+
+  <!-- Display response from the backend -->
+  <div id="response"></div>
+
+  <script>
+    // Handle form submission
+    document.getElementById("dataForm").addEventListener("submit", async function(event) {
+      event.preventDefault(); // Prevent the form from submitting the usual way
+
+      const name = document.getElementById("name").value;
+
+      try {
+        // Send data to the backend
+        const response = await fetch("http://localhost:3000/api/data", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ name: name })
+        });
+
+        // Check if response is OK
+        if (response.ok) {
+          const data = await response.json();
+          document.getElementById("response").innerText = `Server says: ${data.message}`;
+        } else {
+          document.getElementById("response").innerText = "Error: Could not reach the server.";
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        document.getElementById("response").innerText = "Error: Could not connect to the backend.";
+      }
+    });
+  </script>
+</body>
+</html>

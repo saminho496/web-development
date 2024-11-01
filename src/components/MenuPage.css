@@ -1,0 +1,122 @@
+/* MenuPage.css */
+
+/* General Page Styling */
+.menu-page-header {
+  background-image: url('C:\Users\sambe\my-new-app\public\images\mandi.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px; /* adjust the height to your needs */
+}
+
+/* Title Styling */
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #0c0c0c;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center; /* Center the title */
+}
+
+/* Dropdown */
+.dropdown-toggle {
+  background-color: #f9533d; /* Bright red color */
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.dropdown-toggle:hover, .dropdown-toggle:focus {
+  background-color: #d94b34; /* Darker shade for hover */
+}
+
+/* Menu Grid Layout */
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Increase space between items */
+  justify-content: center;
+}
+
+/* Menu Item Card */
+/* Menu Item Card */
+.menu-item-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Menu Item Image */
+.menu-item-image {
+  width: 100%;
+  height: 200px; /* Set a fixed height to ensure uniformity */
+  object-fit: fill; /* Ensures the image covers the container without distortion */
+}
+
+
+/* Card Content */
+.card-body {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for readability */
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+}
+
+/* Menu Item Name */
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+/* Price and Category Badge */
+.price-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-price {
+  font-size: 1.4rem;
+  color: #f9533d; /* Price in the same color as dropdown */
+  font-weight: bold;
+}
+
+/* Category Badge Styling */
+.badge-secondary {
+  font-size: 0.9rem;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  border-radius: 5px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-button {
+  background-color: #f9533d; /* Button color matches the theme */
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  padding: 0.6rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #d94b34; /* Darker shade on hover */
+}
+.card img {
+  max-width: 100%;
+  max-height: 150px;
+}
