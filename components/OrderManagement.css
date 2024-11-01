@@ -1,0 +1,58 @@
+/* src/components/OrderManagement.css */
+.order-management-container {
+  padding: 20px;
+}
+
+.order-management-container h2 {
+  margin-bottom: 20px;
+}
+
+.order-management-container .card {
+  margin-bottom: 20px;
+}
+
+.order-management-container .table {
+  margin-bottom: 20px;
+}
+
+.order-management-container .table th {
+  background-color: #f0f0f0;
+}
+
+.order-management-container .table td {
+  padding: 10px;
+}
+
+.order-management-container .btn {
+  margin-right: 10px;
+}
+
+.order-management-container .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.order-management-container .btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.order-management-container .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.order-management-container .btn-secondary:hover {
+  background-color: #545b62;
+  border-color: #545b62;
+}
+
+.order-management-container .btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.order-management-container .btn-danger:hover {
+  background-color: #bd2130;
+  border-color: #bd2130;
+}

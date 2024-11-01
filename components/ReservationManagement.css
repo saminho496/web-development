@@ -1,0 +1,28 @@
+/* src/components/ReservationManagement.css */
+.reservation-management-container {
+    padding: 20px;
+  }
+  
+  .reservation-management-container h2 {
+    margin-bottom: 20px;
+  }
+  
+  .reservation-management-container .card {
+    margin-bottom: 20px;
+  }
+  
+  .reservation-management-container .table {
+    margin-bottom: 20px;
+  }
+  
+  .reservation-management-container .table th {
+    background-color: #f0f0f0;
+  }
+  
+  .reservation-management-container .table td {
+    padding: 10px;
+  }
+  
+  .reservation-management-container .btn {
+    margin-right: 10px;
+  }
