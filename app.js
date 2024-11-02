@@ -5,6 +5,7 @@ import LoginPage from './components/login';
 import SignupPage from './components/SignupPage';
 import Dashboard from './components/Dashboard';
 import MenuPage from './components/MenuPage';
+import PaymentPage from './components/PaymentPage';
 import OrderManagement from './components/OrderManagement';
 import ReservationManagement from './components/ReservationManagement';
 import OrderHistory from './components/OrderHistory';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/menu" element={<MenuPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
         <Route path="/orders" element={<OrderManagement />} />
         <Route path="/reservations" element={<ReservationManagement />} />
         <Route path="/order-history" element={<OrderHistory />} />
@@ -38,3 +40,4 @@ function App() {
 }
 
 export default App;
+
