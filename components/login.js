@@ -11,6 +11,7 @@ function LoginPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // Simulating login logic (replace with real API call if necessary)
     if (username === 'admin' && password === 'password') {
       setError('');
       navigate('/dashboard'); // Use navigate to redirect to the dashboard
@@ -56,6 +57,16 @@ function LoginPage() {
                   Login
                 </Button>
               </Form>
+
+              <div className="text-center mt-3">
+                <Button
+                  variant="link"
+                  onClick={() => navigate('/signup')}
+                  style={{ textDecoration: 'none', color: '#0d6efd' }}
+                >
+                  Not signed in? Sign up here
+                </Button>
+              </div>
             </Card.Body>
           </Card>
         </Col>
