@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './components/login';
+import SignupPage from './components/SignupPage';
 import Dashboard from './components/Dashboard';
 import MenuPage from './components/MenuPage';
 import OrderManagement from './components/OrderManagement';
@@ -23,6 +24,7 @@ function App() {
       {/* Include MenuPage if it should be visible on all pages */}
       <Routes>
         <Route path="/" element={<LoginPage />} />
+        <Route path="/signup" element={<SignupPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/orders" element={<OrderManagement />} />
